@@ -4,18 +4,18 @@ print "Thtring pleathe, mathter:"
 
 user_input =  gets.chomp
 
-downflag=false
-upflag=false
+s_flag=false
+
 if user_input.include? "s"
 	user_input.gsub!(/s/, "th")
-	downflag = true
+	s_flag = true
 end
 if user_input.include? "S"
 	user_input.gsub!(/S/, "Th")
-	upflag = true		
+	s_flag = true		
 end
 
-if downflag = true || upflag=true
+if s_flag == true
 	puts "Thank you, mathter. Your thtring ith: #{user_input}"
 else
 	puts "There ith nothing to change, mathter."
